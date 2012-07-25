@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="testResults">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="httpSample" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="assertionResult" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string" minOccurs="0" />
+                    <xs:element name="failure" type="xs:string" minOccurs="0" />
+                    <xs:element name="error" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="t" type="xs:double" />
+            <xs:attribute name="lt" type="xs:double" />
+            <xs:attribute name="ts" type="xs:double" />
+            <xs:attribute name="s" type="xs:boolean" />
+            <xs:attribute name="lb" type="xs:string" />
+            <xs:attribute name="rc" type="xs:string" />
+            <xs:attribute name="rm" type="xs:string" />
+            <xs:attribute name="tn" type="xs:string" />
+            <xs:attribute name="dt" type="xs:string" />
+            <xs:attribute name="by" type="xs:double" />
+            <xs:attribute name="ng" type="xs:int" />
+            <xs:attribute name="na" type="xs:int" />
+            <xs:attribute name="hn" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="testResults" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
