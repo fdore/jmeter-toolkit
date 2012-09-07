@@ -6,16 +6,17 @@ JMeter Chart Builder
 Tool to create charts from JMeter logs.
 
 Usage
+-----
 
 Commands:
 
-ProcessFile: generate chart based on a single log file
+**ProcessFile**: generate chart based on a single log file
 
-Options:
+	Options:
 
---file: input file
+		--file: input file
 
-ProcessDirectory: generate chart(s) based on the files contained in the input directory
+**ProcessDirectory**: generate chart(s) based on the files contained in the input directory
 
 	Options:
 	
@@ -26,8 +27,9 @@ ProcessDirectory: generate chart(s) based on the files contained in the input di
 		--merge: yes will merge all the input files, and based on the data, produce a comparison chart, or trend chart. Note that the tool will produce a trend chart if requests are made at different dates.
 
 Types of charts
+---------------
 
-Comparison chart
+**Comparison chart**
 
 	Comparison chart shows the results of all the requests contained in the test plan.
 
@@ -39,7 +41,7 @@ Comparison chart
 	- The min/max response time excluding the 10% slowest requests, and the 10% fastest requests
 	- The distribution of the response time
 
-Trend chart
+**Trend chart**
 
 	The trend chart shows the evolution of the response time for a specific request over a period of time. Each bar represents the average response time for a specific date.
 
