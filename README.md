@@ -24,7 +24,8 @@ Commands:
 		
 		--outDir: output directory
 		
-		--merge: yes will merge all the input files, and based on the data, produce a comparison chart, or trend chart. Note that the tool will produce a trend chart if requests are made at different dates.
+		--merge: yes will merge all the input files, and based on the data, produce a comparison chart, or trend chart. 
+		Note that the tool will produce a trend chart if requests are made at different dates.
 
 Types of charts
 ---------------
@@ -43,7 +44,8 @@ Types of charts
 
 **Trend chart**
 
-	The trend chart shows the evolution of the response time for a specific request over a period of time. Each bar represents the average response time for a specific date.
+	The trend chart shows the evolution of the response time for a specific request over a period of time. 
+	Each bar represents the average response time for a specific date.
 
 	- The average response time
 	- The min/max response time
