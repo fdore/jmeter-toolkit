@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Jmeter-toolkit : A command line tool to create charts from JMeter logs" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Jmeter-toolkit</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/fdore/jmeter-toolkit">View on GitHub</a>
+
+          <h1 id="project_title">Jmeter-toolkit</h1>
+          <h2 id="project_tagline">A command line tool to create charts from JMeter logs</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/fdore/jmeter-toolkit/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/fdore/jmeter-toolkit/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>jmeter-toolkit</h1>
+
+<p>A command line tool to create charts from JMeter logs.</p>
+
+<h2>Usage</h2>
+
+<p>Commands:</p>
+
+<p><strong>ProcessFile</strong>: generate chart based on a single log file</p>
+
+<pre><code>Options:
+
+    --file: input file
+</code></pre>
+
+<p><strong>ProcessDirectory</strong>: generate chart(s) based on the files contained in the input directory</p>
+
+<pre><code>Options:
+
+    --dir: input directory
+
+    --outDir: output directory
+
+    --merge: yes will merge all the input files, and based on the data, produce a comparison chart, or trend chart. 
+    Note that the tool will produce a trend chart if requests are made at different dates.
+</code></pre>
+
+<h2>Types of charts</h2>
+
+<p><strong>Comparison chart</strong></p>
+
+<pre><code>Comparison chart shows the results of all the requests contained in the test plan.
+
+The chart shows the following information:
+
+- The average response time
+- The min/max response time
+- The average time excluding the 10% slowest requests, and the 10% fastest requests
+- The min/max response time excluding the 10% slowest requests, and the 10% fastest requests
+- The distribution of the response time
+</code></pre>
+
+<p><strong>Trend chart</strong></p>
+
+<pre><code>The trend chart shows the evolution of the response time for a specific request over a period of time. 
+Each bar represents the average response time for a specific date.
+
+- The average response time
+- The min/max response time
+- The average time excluding the 10% slowest requests, and the 10% fastest requests
+- The min/max response time excluding the 10% slowest requests, and the 10% fastest requests
+- The distribution of the response time
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Jmeter-toolkit maintained by <a href="https://github.com/fdore">fdore</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-34741683-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
