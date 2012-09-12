@@ -40,6 +40,8 @@ Types of charts
 	- The min/max response time excluding the 10% slowest requests, and the 10% fastest requests
 	- The distribution of the response time
 
+![JMeter Comparison Chart](https://raw.github.com/fdore/jmeter-toolkit/master/docs/comparison-chart.jpg)
+	
 **Trend chart**
 
 	The trend chart shows the evolution of the response time for a specific request over a period of time. 
@@ -50,3 +52,5 @@ Types of charts
 	- The average time excluding the 10% slowest requests, and the 10% fastest requests
 	- The min/max response time excluding the 10% slowest requests, and the 10% fastest requests
 	- The distribution of the response time
+	
+![JMeter Trend Chart](https://raw.github.com/fdore/jmeter-toolkit/master/docs/trend-chart.jpg)	
