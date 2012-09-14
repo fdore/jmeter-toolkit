@@ -64,6 +64,7 @@
     <Compile Include="Extensions\TextObjExtensions.cs" />
     <Compile Include="Processor\ComparisonDataResultsHandler.cs" />
     <Compile Include="Processor\DataResultsHandler.cs" />
+    <Compile Include="Processor\TestResultsProcessor.cs" />
     <Compile Include="Processor\TrendDataResultsHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XmlSerializer.cs" />
@@ -72,7 +73,6 @@
       <DependentUpon>jmeter.xsd</DependentUpon>
     </Compile>
     <Compile Include="XSD\jmeter.designer.cs" />
-    <Compile Include="Processor\TestResultsProcessor.cs" />
     <Compile Include="XSD\testResults.cs" />
   </ItemGroup>
   <ItemGroup>

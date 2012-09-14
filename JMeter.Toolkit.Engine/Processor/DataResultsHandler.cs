@@ -18,7 +18,7 @@ namespace JMeter.Toolkit.Engine.Processor
             {
                 return HandleResults(results);
             }
-            return _nextHandler.HandleResults(results);
+            return _nextHandler.ProcessResults(results);
         }
 
         protected abstract Chart[] HandleResults(IEnumerable<RequestDataResults> results);
